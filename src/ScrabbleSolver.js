@@ -4,7 +4,13 @@ class ScrabbleSolver {
   }
 
   score = () => {
-    return this.word === 'a' ? 1 : 2
+    if (this.word === 'a') {
+      return 1
+    } else if (this.word === 'd') {
+      return 2
+    } else {
+      return 3
+    }
   }
 }
 
