@@ -25,4 +25,10 @@ describe('ScrabbleSolver', () => {
     
     expect(scrabbleSolver.score()).toEqual(4)
   })
+
+  test('Should return 2 when given aa as a parameter', () => {
+    scrabbleSolver = new ScrabbleSolver('aa')
+    
+    expect(scrabbleSolver.score()).toEqual(2)
+  })
 })
