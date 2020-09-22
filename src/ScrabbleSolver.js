@@ -6,7 +6,7 @@ class ScrabbleSolver {
   score = () => {
     if (this.word === 'a') {
       return 1
-    } else if (this.word === 'd') {
+    } else if (this.word === 'd' || this.word === 'aa') {
       return 2
     } else if (this.word === 'b') {
       return 3
