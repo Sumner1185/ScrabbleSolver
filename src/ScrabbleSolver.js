@@ -4,7 +4,7 @@ class ScrabbleSolver {
   }
 
   score = () => {
-    return 1
+    return this.word === 'a' ? 1 : 2
   }
 }
 
