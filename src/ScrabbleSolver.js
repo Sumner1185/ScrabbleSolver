@@ -8,8 +8,10 @@ class ScrabbleSolver {
       return 1
     } else if (this.word === 'd') {
       return 2
-    } else {
+    } else if (this.word === 'b') {
       return 3
+    } else {
+      return 4
     }
   }
 }
