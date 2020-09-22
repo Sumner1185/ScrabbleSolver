@@ -1,0 +1,23 @@
+{
+  "name": "scrabbleSolver",
+  "version": "1.0.0",
+  "description": "Basic tech test in JS and testing with Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumner1185/ScrabbleSolver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sumner1185/ScrabbleSolver/issues"
+  },
+  "homepage": "https://github.com/Sumner1185/ScrabbleSolver#readme",
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}

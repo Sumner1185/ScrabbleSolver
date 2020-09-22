@@ -11,7 +11,7 @@ Given a word, compute the Scrabble score for that word.
 You'll need these:
 | Letter | Value |
 |--------|-------|
-| A, E, I, o, U, L, N, R, S, T | 1 |
+| A, E, I, O, U, L, N, R, S, T | 1 |
 | D, G | 2 |
 | B, C, M, P | 3 |
 | F, H, V, W, Y | 4 |
