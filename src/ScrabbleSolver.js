@@ -7,7 +7,6 @@ class ScrabbleSolver {
     let wordArray = this.word.split('')
     let totalScore = 0
     for (let i = 0; i < wordArray.length; i++) {
-      console.log(i)
       if (wordArray[i] === 'a') {
         totalScore += 1
       } else if (wordArray[i] === 'd') {
