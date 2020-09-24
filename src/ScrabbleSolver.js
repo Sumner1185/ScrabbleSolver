@@ -4,15 +4,21 @@ class ScrabbleSolver {
   }
 
   score = () => {
-    if (this.word === 'a') {
-      return 1
-    } else if (this.word === 'd' || this.word === 'aa') {
-      return 2
-    } else if (this.word === 'b') {
-      return 3
-    } else {
-      return 4
+    let wordArray = this.word.split('')
+    let totalScore = 0
+    for (let i = 0; i < wordArray.length; i++) {
+      console.log(i)
+      if (wordArray[i] === 'a') {
+        totalScore += 1
+      } else if (wordArray[i] === 'd') {
+        totalScore += 2
+      } else if (wordArray[i] === 'b') {
+        totalScore += 3
+      } else {
+        totalScore += 4
+      }
     }
+    return totalScore
   }
 }
 
