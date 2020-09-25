@@ -93,4 +93,10 @@ describe('ScrabbleSolver', () => {
 
     expect(scrabbleSolver.score()).toEqual(8)
   })
+
+  test('Should return 10 when given either ten point letters as a parameter', () => {
+    scrabbleSolver = new ScrabbleSolver('z')
+
+    expect(scrabbleSolver.score()).toEqual(10)
+  })
 })
