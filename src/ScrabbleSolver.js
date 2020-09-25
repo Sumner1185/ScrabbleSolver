@@ -11,7 +11,7 @@ class ScrabbleSolver {
         totalScore += 1
       } else if (this.letterIsTwoPointer(wordArray[i])) {
         totalScore += 2
-      } else if (wordArray[i] === 'b') {
+      } else if (wordArray[i] === 'b' || wordArray[i] === 'c' || wordArray[i] === 'm' || wordArray[i] === 'p') {
         totalScore += 3
       } else {
         totalScore += 4

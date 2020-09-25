@@ -53,8 +53,8 @@ describe('ScrabbleSolver', () => {
     scrabbleSolverTest2 = new ScrabbleSolver('m')
     scrabbleSolverTest3 = new ScrabbleSolver('p')
 
-    expect(scrabbleSolverTest1.score()).toEqual(1)
-    expect(scrabbleSolverTest2.score()).toEqual(1)
-    expect(scrabbleSolverTest3.score()).toEqual(1)
+    expect(scrabbleSolverTest1.score()).toEqual(3)
+    expect(scrabbleSolverTest2.score()).toEqual(3)
+    expect(scrabbleSolverTest3.score()).toEqual(3)
   })
 })
