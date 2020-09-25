@@ -33,8 +33,12 @@ describe('ScrabbleSolver', () => {
   })
 
   test('Should return 1 when given any one point letter as a parameter', () => {
-    scrabbleSolver = new ScrabbleSolver('e')
+    scrabbleSolverTest1 = new ScrabbleSolver('e')
+    scrabbleSolverTest2 = new ScrabbleSolver('i')
+    scrabbleSolverTest3 = new ScrabbleSolver('o')
 
-    expect(scrabbleSolver.score()).toEqual(1)
+    expect(scrabbleSolverTest1.score()).toEqual(1)
+    expect(scrabbleSolverTest2.score()).toEqual(1)
+    expect(scrabbleSolverTest3.score()).toEqual(1)
   })
 })
