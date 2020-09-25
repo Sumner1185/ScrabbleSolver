@@ -113,4 +113,18 @@ describe('ScrabbleSolver', () => {
 
     expect(scrabble.score()).toEqual(0)
   })
+
+  test('Should return 0 if given anything other than a word string as a parameter', () => {
+    scrabbleTest1 = new ScrabbleSolver(" \t\n")
+    scrabbleTest2 = new ScrabbleSolver(true)
+    scrabbleTest3 = new ScrabbleSolver(null)
+    scrabbleTest4 = new ScrabbleSolver({'test': 1})
+    scrabbleTest5 = new ScrabbleSolver(123)
+
+    expect(scrabbleTest1.score()).toEqual(0)
+    expect(scrabbleTest2.score()).toEqual(0)
+    expect(scrabbleTest3.score()).toEqual(0)
+    expect(scrabbleTest4.score()).toEqual(0)
+    expect(scrabbleTest5.score()).toEqual(0)
+  })
 })

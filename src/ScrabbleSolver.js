@@ -5,8 +5,16 @@ class ScrabbleSolver {
   }
 
   score = () => {
-    let wordArray = this.word.split('')
-    return this.calculateScore(wordArray)
+    if (this.parameterIsAString()) {
+      let wordArray = this.word.split('')
+
+      return this.calculateScore(wordArray)
+    }
+    return 0
+  }
+
+  parameterIsAString = () => {
+   return typeof this.word === 'string' ? true : false
   }
 
   calculateScore = (wordArray) => {
