@@ -31,4 +31,10 @@ describe('ScrabbleSolver', () => {
     
     expect(scrabbleSolver.score()).toEqual(2)
   })
+
+  test('Should return 1 when given any one point letter as a parameter', () => {
+    scrabbleSolver = new ScrabbleSolver('e')
+
+    expect(scrabbleSolver.score()).toEqual(1)
+  })
 })
