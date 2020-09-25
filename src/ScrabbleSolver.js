@@ -7,7 +7,7 @@ class ScrabbleSolver {
     let wordArray = this.word.split('')
     let totalScore = 0
     for (let i = 0; i < wordArray.length; i++) {
-      if (wordArray[i] === 'a' || wordArray[i] === 'e' || wordArray[i] === 'i' || wordArray[i] === 'o') {
+      if (this.letterIsOnePointer(wordArray[i])) {
         totalScore += 1
       } else if (wordArray[i] === 'd') {
         totalScore += 2
@@ -18,6 +18,12 @@ class ScrabbleSolver {
       }
     }
     return totalScore
+  }
+
+  letterIsOnePointer = (letter) => {
+    let onePointers = ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't']
+
+    return onePointers.includes(letter)
   }
 }
 
