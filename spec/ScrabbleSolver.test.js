@@ -75,4 +75,16 @@ describe('ScrabbleSolver', () => {
     expect(scrabbleSolverTest2.score()).toEqual(3)
     expect(scrabbleSolverTest3.score()).toEqual(3)
   })
+
+  test('Should return 4 when given all four point letters as a parameter', () => {
+    scrabbleSolverTest1 = new ScrabbleSolver('h')
+    scrabbleSolverTest2 = new ScrabbleSolver('v')
+    scrabbleSolverTest3 = new ScrabbleSolver('w')
+    scrabbleSolverTest4 = new ScrabbleSolver('y')
+
+    expect(scrabbleSolverTest1.score()).toEqual(3)
+    expect(scrabbleSolverTest2.score()).toEqual(3)
+    expect(scrabbleSolverTest3.score()).toEqual(3)
+    expect(scrabbleSolverTest4.score()).toEqual(3)
+  })
 })
