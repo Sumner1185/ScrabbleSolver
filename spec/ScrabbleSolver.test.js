@@ -99,4 +99,12 @@ describe('ScrabbleSolver', () => {
 
     expect(scrabbleSolver.score()).toEqual(10)
   })
+
+  test('Should return correct score for any lower case word', () => {
+    scrabbleSolverTest1 = new ScrabbleSolver('street')
+    scrabbleSolverTest2 = new ScrabbleSolver('quirky')
+
+    expect(scrabbleSolverTest1.score()).toEqual(6)
+    expect(scrabbleSolverTest2.score()).toEqual(22)
+  })
 })
