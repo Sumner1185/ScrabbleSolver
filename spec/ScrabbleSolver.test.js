@@ -87,4 +87,10 @@ describe('ScrabbleSolver', () => {
     expect(scrabbleSolverTest3.score()).toEqual(4)
     expect(scrabbleSolverTest4.score()).toEqual(4)
   })
+
+  test('Should return 8 when given either eight point letters as a parameter', () => {
+    scrabbleSolver = new ScrabbleSolver('x')
+
+    expect(scrabbleSolver.score()).toEqual(8)
+  })
 })
