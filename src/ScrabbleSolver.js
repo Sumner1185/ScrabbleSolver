@@ -17,8 +17,10 @@ class ScrabbleSolver {
         totalScore += 4
       } else if (wordArray[i] === 'k') {
         totalScore += 5
-      } else {
+      } else if (wordArray[i] === 'j') {
         totalScore += 8
+      } else {
+        totalScore += 10
       }
     }
     return totalScore
