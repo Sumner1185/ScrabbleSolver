@@ -1,29 +1,33 @@
 class ScrabbleSolver {
   constructor(word) {
     this.word = word
+    this.totalScore = 0
   }
 
   score = () => {
     let wordArray = this.word.split('')
-    let totalScore = 0
+    return this.calculateScore(wordArray)
+  }
+
+  calculateScore = (wordArray) => {
     for (let i = 0; i < wordArray.length; i++) {
       if (this.letterIsOnePointer(wordArray[i])) {
-        totalScore += 1
+        this.totalScore += 1
       } else if (this.letterIsTwoPointer(wordArray[i])) {
-        totalScore += 2
+        this.totalScore += 2
       } else if (this.letterIsThreePointer(wordArray[i])) {
-        totalScore += 3
+        this.totalScore += 3
       } else if (this.letterIsFourPointer(wordArray[i])) {
-        totalScore += 4
+        this.totalScore += 4
       } else if (this.letterIsFivePointer(wordArray[i])) {
-        totalScore += 5
+        this.totalScore += 5
       } else if (this.letterIsEightPointer(wordArray[i])) {
-        totalScore += 8
+        this.totalScore += 8
       } else if (this.letterIsTenPointer(wordArray[i])) {
-        totalScore += 10
+        this.totalScore += 10
       }
     }
-    return totalScore
+    return this.totalScore
   }
 
   letterIsOnePointer = (letter) => {
