@@ -127,4 +127,10 @@ describe('ScrabbleSolver', () => {
     expect(scrabbleTest4.score()).toEqual(0)
     expect(scrabbleTest5.score()).toEqual(0)
   })
+
+  test('Should calculate points even if word has capitals', () => {
+    scrabble = new ScrabbleSolver('OXYPHENBUTAZONE')
+
+    expect(scrabble.score()).toEqual(41)
+  })
 })

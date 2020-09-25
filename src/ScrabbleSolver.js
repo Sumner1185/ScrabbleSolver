@@ -6,7 +6,7 @@ class ScrabbleSolver {
 
   score = () => {
     if (this.parameterIsAString()) {
-      let wordArray = this.word.split('')
+      let wordArray = this.word.toLowerCase().split('')
 
       return this.calculateScore(wordArray)
     }
