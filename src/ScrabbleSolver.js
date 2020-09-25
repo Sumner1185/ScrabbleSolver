@@ -19,7 +19,7 @@ class ScrabbleSolver {
         totalScore += 5
       } else if (this.letterIsEightPointer(wordArray[i])) {
         totalScore += 8
-      } else {
+      } else if (this.letterIsTenPointer(wordArray[i])) {
         totalScore += 10
       }
     }
@@ -56,6 +56,12 @@ class ScrabbleSolver {
     let eightPointers = ['j', 'x']
 
     return eightPointers.includes(letter)
+  }
+  
+  letterIsTenPointer = (letter) => {
+    let tenPointers = ['q', 'z']
+
+    return tenPointers.includes(letter)
   }
 }
 
