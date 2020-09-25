@@ -15,9 +15,9 @@ class ScrabbleSolver {
         totalScore += 3
       } else if (this.letterIsFourPointer(wordArray[i])) {
         totalScore += 4
-      } else if (wordArray[i] === 'k') {
+      } else if (this.letterIsFivePointer(wordArray[i])) {
         totalScore += 5
-      } else if (wordArray[i] === 'j') {
+      } else if (this.letterIsEightPointer(wordArray[i])) {
         totalScore += 8
       } else {
         totalScore += 10
@@ -48,6 +48,14 @@ class ScrabbleSolver {
     let fourPointers = ['f', 'h', 'v', 'w', 'y']
 
     return fourPointers.includes(letter)
+  }
+
+  letterIsFivePointer = letter => letter === 'k'
+
+  letterIsEightPointer = (letter) => {
+    let eightPointers = ['j', 'x']
+
+    return eightPointers.includes(letter)
   }
 }
 
