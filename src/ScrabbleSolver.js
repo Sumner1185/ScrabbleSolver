@@ -18,7 +18,7 @@ class ScrabbleSolver {
       } else if (wordArray[i] === 'k') {
         totalScore += 5
       } else {
-        totalScore += 6
+        totalScore += 8
       }
     }
     return totalScore
