@@ -38,6 +38,12 @@ describe('ScrabbleSolver', () => {
     expect(scrabbleSolver.score()).toEqual(8)
   })
 
+  test('Should return 10 when given q as a parameter', () => {
+    scrabbleSolver = new ScrabbleSolver('q')
+    
+    expect(scrabbleSolver.score()).toEqual(10)
+  })
+
   test('Should return 2 when given aa as a parameter', () => {
     scrabbleSolver = new ScrabbleSolver('aa')
     
