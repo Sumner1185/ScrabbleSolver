@@ -13,8 +13,12 @@ class ScrabbleSolver {
         totalScore += 2
       } else if (this.letterIsThreePointer(wordArray[i])) {
         totalScore += 3
-      } else {
+      } else if (wordArray[i] === 'f') {
         totalScore += 4
+      } else if (wordArray[i] === 'k') {
+        totalScore += 5
+      } else {
+        totalScore += 6
       }
     }
     return totalScore
