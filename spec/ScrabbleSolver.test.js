@@ -32,7 +32,7 @@ describe('ScrabbleSolver', () => {
     expect(scrabbleSolver.score()).toEqual(2)
   })
 
-  test('Should return 1 when given any one point letter as a parameter', () => {
+  test('Should return 1 when given any one point letters as a parameter', () => {
     scrabbleSolverTest1 = new ScrabbleSolver('e')
     scrabbleSolverTest2 = new ScrabbleSolver('i')
     scrabbleSolverTest3 = new ScrabbleSolver('o')
@@ -40,5 +40,11 @@ describe('ScrabbleSolver', () => {
     expect(scrabbleSolverTest1.score()).toEqual(1)
     expect(scrabbleSolverTest2.score()).toEqual(1)
     expect(scrabbleSolverTest3.score()).toEqual(1)
+  })
+
+  test('Should return 2 when given either two point letters as a parameter', () => {
+    scrabbleSolver = new ScrabbleSolver('g')
+
+    expect(scrabbleSolver.score()).toEqual(2)
   })
 })
