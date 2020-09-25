@@ -13,7 +13,7 @@ class ScrabbleSolver {
         totalScore += 2
       } else if (this.letterIsThreePointer(wordArray[i])) {
         totalScore += 3
-      } else if (wordArray[i] === 'f') {
+      } else if (this.letterIsFourPointer(wordArray[i])) {
         totalScore += 4
       } else if (wordArray[i] === 'k') {
         totalScore += 5
@@ -42,6 +42,12 @@ class ScrabbleSolver {
     let threePointers = ['b', 'c', 'm', 'p']
 
     return threePointers.includes(letter)
+  }
+
+  letterIsFourPointer = (letter) => {
+    let fourPointers = ['f', 'h', 'v', 'w', 'y']
+
+    return fourPointers.includes(letter)
   }
 }
 
