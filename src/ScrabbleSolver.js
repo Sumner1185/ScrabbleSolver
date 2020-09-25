@@ -11,7 +11,7 @@ class ScrabbleSolver {
         totalScore += 1
       } else if (this.letterIsTwoPointer(wordArray[i])) {
         totalScore += 2
-      } else if (wordArray[i] === 'b' || wordArray[i] === 'c' || wordArray[i] === 'm' || wordArray[i] === 'p') {
+      } else if (this.letterIsThreePointer(wordArray[i])) {
         totalScore += 3
       } else {
         totalScore += 4
@@ -30,6 +30,12 @@ class ScrabbleSolver {
     let twoPointers = ['d', 'g']
 
     return twoPointers.includes(letter)
+  }
+
+  letterIsThreePointer = (letter) => {
+    let threePointers = ['b', 'c', 'm', 'p']
+
+    return threePointers.includes(letter)
   }
 }
 
